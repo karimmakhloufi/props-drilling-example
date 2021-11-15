@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import UserAvatar from "./UserAvatar";
 
-export default function Header({ currentUserAvatar, currentUserName }) {
+export default function Header() {
   return (
     <header>
       <nav>
@@ -10,10 +10,7 @@ export default function Header({ currentUserAvatar, currentUserName }) {
           Home
         </NavLink>
         <NavLink exact to="/profile">
-          <UserAvatar
-            currentUserAvatar={currentUserAvatar}
-            currentUserName={currentUserName}
-          />
+          <UserAvatar />
         </NavLink>
       </nav>
     </header>
